@@ -112,3 +112,8 @@ def perfect(x):
 
 # print(perfect(6))
 
+def reverse(str):
+    return str[::-1]
+
+# print(reverse("GROUPE MINASTE"))
+
