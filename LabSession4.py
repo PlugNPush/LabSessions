@@ -97,3 +97,18 @@ def prime(x):
     return True
 
 # print (prime(41))
+
+def perfect(x):
+    sum = 0
+    i = x-1
+    while i > 0:
+        if (x%i == 0):
+            sum += i
+        i -= 1
+    if sum == x:
+        return True
+    else:
+        return False
+
+# print(perfect(6))
+
