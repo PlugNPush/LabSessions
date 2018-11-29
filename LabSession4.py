@@ -117,3 +117,53 @@ def reverse(str):
 
 # print(reverse("GROUPE MINASTE"))
 
+def uplowcase(str):
+    AER = list(str)
+    length = len(AER)
+    low = 0
+    up = 0
+    i = 0
+    while i < length:
+        if (AER[i] == " ") or (AER[i] == "\n") or (AER[i] == ".") or (AER[i] == "?") or (AER[i] == "!"):
+            a = 0
+        
+        elif AER[i].isupper():
+            up += 1
+        
+        elif AER[i].islower():
+            low += 1
+    
+        else:
+            print("ERROR.")
+        i += 1
+    return low,up
+
+# low, up = uplowcase("Добро Дошли на Груп Минаст !")
+# print ("lowercase : ", low, " and UPPERCASE: ", up)
+
+
+# This part is just for fun, you only can use it if you enter some cyrillic content.
+# It has been entirely developed in cyrillic.
+
+def воел(РЕЋ):
+    
+    СПЛИТ = list(РЕЋ)
+    дугаћ = len(СПЛИТ)
+    ТОТАЛ_ВОЕЛ = 0
+    ж = 0
+    while ж < дугаћ:
+        if (СПЛИТ[ж] == "а") or (СПЛИТ[ж] == "А") or (СПЛИТ[ж] == "е") or (СПЛИТ[ж] == "Е") or (СПЛИТ[ж] == "у") or (СПЛИТ[ж] == "У") or (СПЛИТ[ж] == "и") or (СПЛИТ[ж] == "И") or (СПЛИТ[ж] == "о") or (СПЛИТ[ж] == "О"):
+            ТОТАЛ_ВОЕЛ += 1
+        ж += 1
+    print("Има", ТОТАЛ_ВОЕЛ, "воел у то што си дао.")
+    return ТОТАЛ_ВОЕЛ
+
+def истивоел(РЕЋ1, РЕЋ2):
+    print("Он зна само српски! This function works only for cyrillic, because WHY NOT? 😂\n\n")
+    if воел(РЕЋ1) == воел(РЕЋ2):
+        return True
+    else:
+        return False
+
+# print("Са ово што си дао је: ", истивоел("Дали знаш само шта радиш бре! живиш у франсуска!", "Дали знаш само шта радиш бре! живиш у франсуском!"))
+
