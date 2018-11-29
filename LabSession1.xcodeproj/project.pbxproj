@@ -8,7 +8,8 @@
 
 /* Begin PBXFileReference section */
 		EDC5A2FC21A6FDC7008B779E /* LabSession3.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = LabSession3.py; sourceTree = "<group>"; };
-		EDC5A2FD21A72504008B779E /* LabSession4.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = LabSession4.py; sourceTree = "<group>"; };
+		EDC5A2FD21A72504008B779E /* LabSession4.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = LabSession4.py; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.python; };
+		EDC5A2FE21A7363C008B779E /* WebHack.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = WebHack.py; sourceTree = "<group>"; };
 		EDDF2C44216F952600D5699C /* LabSession1.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = LabSession1.py; sourceTree = "<group>"; };
 		EDDF2C45216FB04F00D5699C /* LabSession2.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = LabSession2.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -21,6 +22,7 @@
 				EDDF2C45216FB04F00D5699C /* LabSession2.py */,
 				EDC5A2FC21A6FDC7008B779E /* LabSession3.py */,
 				EDC5A2FD21A72504008B779E /* LabSession4.py */,
+				EDC5A2FE21A7363C008B779E /* WebHack.py */,
 			);
 			sourceTree = "<group>";
 		};
