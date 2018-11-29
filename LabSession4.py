@@ -141,7 +141,6 @@ def uplowcase(str):
 # low, up = uplowcase("Добро Дошли на Груп Минаст !")
 # print ("lowercase : ", low, " and UPPERCASE: ", up)
 
-
 # This part is just for fun, you only can use it if you enter some cyrillic content.
 # It has been entirely developed in cyrillic.
 
@@ -166,4 +165,20 @@ def истивоел(РЕЋ1, РЕЋ2):
         return False
 
 # print("Са ово што си дао је: ", истивоел("Дали знаш само шта радиш бре! живиш у франсуска!", "Дали знаш само шта радиш бре! живиш у франсуском!"))
+
+def palindrome(word):
+    newword = word.lower()
+    split = list(newword)
+    l = len(split)/2
+    a = 0
+    b = len(split)-1
+
+    while a <= l:
+        if split[a] != split[b]:
+            return False
+        a += 1
+        b -= 1
+    return True
+
+# print (palindrome("Ahoha"))
 
