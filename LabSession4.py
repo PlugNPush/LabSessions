@@ -200,7 +200,6 @@ def square(n,s,A):
 
 def multiply(A, l, r):
     if l >= 0:
-        print("ROUND ", l)
         r = A[l] * multiply(A, l-1, r)
     return r
 
@@ -208,5 +207,14 @@ def multiply(A, l, r):
 # length = len(Array)-1
 # print(multiply(Array, length, 1))
 
+def sum(A, l, r):
+    if l >= 0:
+        r = A[l] + sum(A, l-1, r)
+    return r
 
+# Array = [4,4,4,4]
+# length = len(Array)-1
+# print(sum(Array, length, 0))
+
+def occurence(A, l, t, s, o):
 
