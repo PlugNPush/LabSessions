@@ -216,5 +216,46 @@ def sum(A, l, r):
 # length = len(Array)-1
 # print(sum(Array, length, 0))
 
-def occurence(A, l, t, s, o):
+def occurence(A, l, t, s):
+    if t <= l:
+        if A[t] == s:
+            return t
+        else:
+            return occurence(A, l, t+1, s)
+    return -1
 
+# Array = [4,34,7,6,2,65]
+# length = len(Array)-1
+# search = 6
+# print(occurence(Array, length, 0, search))
+
+def totaloccurence(A, l, t, s, o):
+    if t <= l:
+        if A[t] == s:
+            return totaloccurence(A, l, t+1, s, o+1)
+        else:
+            return totaloccurence(A, l, t+1, s, o)
+    return o
+
+# Array = [4,34,7,6,2,65,8,5,6,8,3,6,2,7,2,6]
+# length = len(Array)-1
+# search = 6
+# print(totaloccurence(Array, length, 0, search, 0))
+
+def unique(A, l, t, NEWA, NEWl):
+    if l >= t:
+        x = 0
+        add = True
+        for x in range(0,NEWl):
+            if A[t] == NEWA[x]:
+                add = False
+        if add == True:
+            NEWA.append(A[t])
+            NEWl += 1
+        return unique(A, l, t+1, NEWA, NEWl)
+    return NEWA
+
+
+Array = [4,34,7,6,2,65,8,5,6,8,3,6,2,7,2,6]
+length = len(Array)-1
+print(unique(Array, length, 1, [Array[4]], 0))
