@@ -244,7 +244,6 @@ def totaloccurence(A, l, t, s, o):
 
 def unique(A, l, t, NEWA, NEWl):
     if l >= t:
-        x = 0
         add = True
         for x in range(0,NEWl):
             if A[t] == NEWA[x]:
@@ -258,4 +257,4 @@ def unique(A, l, t, NEWA, NEWl):
 
 Array = [4,34,7,6,2,65,8,5,6,8,3,6,2,7,2,6]
 length = len(Array)-1
-print(unique(Array, length, 1, [Array[4]], 0))
+print(unique(Array, length, 1, [Array[0]], 0))
