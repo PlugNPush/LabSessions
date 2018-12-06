@@ -182,3 +182,31 @@ def palindrome(word):
 
 # print (palindrome("Ahoha"))
 
+def sortlist(list):
+    ARRAY = list.split("-")
+    res = sorted(ARRAY, key=str.lower)
+    return res
+
+# print (sortlist("Eh-bah-comment-ça-va-toi-j'esprere-que-tu-vas-bien-au-moins-merci-a-bientot"))
+
+def square(n,s,A):
+    if n < s:
+        AS = n*n
+        A[n-1] = AS
+        return square(n+1,s,A)
+    return A
+
+#print(square(1,30,[0] * 29))
+
+def multiply(A, l, r):
+    if l >= 0:
+        print("ROUND ", l)
+        r = A[l] * multiply(A, l-1, r)
+    return r
+
+# Array = [4,4,4,4]
+# length = len(Array)-1
+# print(multiply(Array, length, 1))
+
+
+
