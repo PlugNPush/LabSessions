@@ -22,11 +22,11 @@
 
 # TEST Variables Aera
 
-SArray = [1,3,5,7,8,41,54,75]
-USArray = [1,3,5,7,8,41,54,75,4]
+#SArray = [1,3,5,7,8,41,54,75]
+#USArray = [1,3,5,7,8,41,54,75,4]
 
-searchFor = 41
-SearchForNotExisting = 12
+#searchFor = 41
+#SearchForNotExisting = 12
 
 # End of TEST Variables Aera
 
