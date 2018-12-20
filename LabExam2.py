@@ -16,9 +16,19 @@
 # 4. Write a main python program allowing to check the previous functions.
 
 
+
+
+# Variable Aera
+
 SArray = [1,3,5,7,8,41,54,75]
 USArray = [1,3,5,7,8,41,54,75,4]
 
+searchFor = 41
+SearchForNotExisting = 12
+
+# End of Variable Aera
+
+# Exercice 1
 def IsSorted(a):
     l = len(a)
     status = True
@@ -31,13 +41,29 @@ def IsSorted(a):
 
 
 print("Exercice 1, sorted Array: ", IsSorted(SArray))
-print("Exercice 1, unsorted Array: ", IsSorted(USArray))
+print("Exercice 1, unsorted Array: ", IsSorted(USArray), "\n")
 
-def SearchInSorted(a):
+# Exercice 2
+def SearchInSorted(a, s):
     if IsSorted(a) == False:
         return -2
     else:
+        l = len(a)
+        found = False
+        i = 0
+        stop = False
+        while i < l-1:
+            if a[i] > s:
+                return -1
+            if a[i] == s:
+                return i
+            i += 1
+        return -1
 
+print("Exercice 2, sorted Array: ", SearchInSorted(SArray, searchFor))
+print("Exercice 2, unsorted Array: ", SearchInSorted(USArray, searchFor))
+print("Exercice 2, sorted Array + not existing value: ", SearchInSorted(SArray, SearchForNotExisting), "\n")
 
-print("Exercice 2, sorted Array: ", SearchInSorted(SArray))
-print("Exercice 2, unsorted Array: ", SearchInSorted(USArray))
+# Exercice 3
+def DicoSearchInSorted:
+    
