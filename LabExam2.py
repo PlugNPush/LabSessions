@@ -39,19 +39,18 @@ def IsSorted(a):
         i += 1
     return status
 
-
+# Expecting True
 print("Exercice 1, sorted Array: ", IsSorted(SArray))
+# Expecting False
 print("Exercice 1, unsorted Array: ", IsSorted(USArray), "\n")
 
 # Exercice 2
-def SearchInSorted(a, s):
+def SearchInSorted(a,s):
     if IsSorted(a) == False:
         return -2
     else:
         l = len(a)
-        found = False
         i = 0
-        stop = False
         while i < l-1:
             if a[i] > s:
                 return -1
@@ -60,10 +59,13 @@ def SearchInSorted(a, s):
             i += 1
         return -1
 
+# Expecting 5
 print("Exercice 2, sorted Array: ", SearchInSorted(SArray, searchFor))
+# Expecting -2
 print("Exercice 2, unsorted Array: ", SearchInSorted(USArray, searchFor))
+# Expecting -1
 print("Exercice 2, sorted Array + not existing value: ", SearchInSorted(SArray, SearchForNotExisting), "\n")
 
 # Exercice 3
-def DicoSearchInSorted:
-    
+def DicoSearchInSorted(a,s):
+    print("PENDING")
