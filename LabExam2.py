@@ -68,4 +68,56 @@ print("Exercice 2, sorted Array + not existing value: ", SearchInSorted(SArray, 
 
 # Exercice 3
 def DicoSearchInSorted(a,s):
-    print("PENDING")
+    if IsSorted(a) == False:
+        return -2
+    else:
+        l = len(a)
+        i = 0
+        if s < a[int(l/2)]:
+            if s < a[int(l/4)]:
+                while i < l/4:
+                    if a[i] > s:
+                        return -1
+                    if a[i] == s:
+                        return i
+                    i += 1
+            if s > a[int(l/4)]:
+                i = int(l/4)
+                while i < l/2:
+                    if a[i] > s:
+                        return -1
+                    if a[i] == s:
+                        return i
+                    i += 1
+        if s > a[int(l/2)]:
+            i = int(l/2)
+            if s < a[int((1/4)*3)]:
+                while i < l/4*3:
+                    if a[i] > s:
+                        return -1
+                    if a[i] == s:
+                        return i
+                    i += 1
+            if s > a[int((1/4)*3)]:
+                i = int((1/4)*3)
+                while i < l-1:
+                    if a[i] > s:
+                        return -1
+                    if a[i] == s:
+                        return i
+                    i += 1
+        return -1
+
+
+# Expecting 5
+print("Exercice 3, sorted Array: ", DicoSearchInSorted(SArray, searchFor))
+# Expecting -2
+print("Exercice 3, unsorted Array: ", DicoSearchInSorted(USArray, searchFor))
+# Expecting -1
+print("Exercice 3, sorted Array + not existing value: ", DicoSearchInSorted(SArray, SearchForNotExisting), "\n")
+
+
+
+# Exercice 4
+def main():
+    return 0
