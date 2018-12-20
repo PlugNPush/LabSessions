@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		ED1828AE21B9A0CC0097A9E7 /* computer.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = computer.py; sourceTree = "<group>"; };
+		ED1828AF21B9A0CC0097A9E7 /* game.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = game.py; sourceTree = "<group>"; };
+		ED1828B021B9A0CC0097A9E7 /* human.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = human.py; sourceTree = "<group>"; };
+		ED1828B121B9A0CC0097A9E7 /* main.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
+		ED1828B221B9A0CC0097A9E7 /* player.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = player.py; sourceTree = "<group>"; };
+		ED4C58CC21CBE7F600754B5A /* LabExam2.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = LabExam2.py; sourceTree = "<group>"; };
 		EDC5A2FC21A6FDC7008B779E /* LabSession3.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = LabSession3.py; sourceTree = "<group>"; };
 		EDC5A2FD21A72504008B779E /* LabSession4.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = LabSession4.py; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.python; };
 		EDC5A2FE21A7363C008B779E /* WebHack.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = WebHack.py; sourceTree = "<group>"; };
@@ -18,10 +24,16 @@
 		EDDF2C38216F93C700D5699C = {
 			isa = PBXGroup;
 			children = (
+				ED4C58CC21CBE7F600754B5A /* LabExam2.py */,
 				EDDF2C44216F952600D5699C /* LabSession1.py */,
 				EDDF2C45216FB04F00D5699C /* LabSession2.py */,
 				EDC5A2FC21A6FDC7008B779E /* LabSession3.py */,
 				EDC5A2FD21A72504008B779E /* LabSession4.py */,
+				ED1828AE21B9A0CC0097A9E7 /* computer.py */,
+				ED1828AF21B9A0CC0097A9E7 /* game.py */,
+				ED1828B021B9A0CC0097A9E7 /* human.py */,
+				ED1828B121B9A0CC0097A9E7 /* main.py */,
+				ED1828B221B9A0CC0097A9E7 /* player.py */,
 				EDC5A2FE21A7363C008B779E /* WebHack.py */,
 			);
 			sourceTree = "<group>";
