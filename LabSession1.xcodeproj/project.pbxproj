@@ -18,10 +18,19 @@
 		EDC5A2FE21A7363C008B779E /* WebHack.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = WebHack.py; sourceTree = "<group>"; };
 		EDDF2C44216F952600D5699C /* LabSession1.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = LabSession1.py; sourceTree = "<group>"; };
 		EDDF2C45216FB04F00D5699C /* LabSession2.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = LabSession2.py; sourceTree = "<group>"; };
+		EDE9560C2330CE380049C6CA /* td1.alg */ = {isa = PBXFileReference; lastKnownFileType = text; path = td1.alg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		EDDF2C38216F93C700D5699C = {
+			isa = PBXGroup;
+			children = (
+				EDE9560B2330CE130049C6CA /* L1-2019_2020 */,
+				EDE9560A2330CDE80049C6CA /* L1-2018_2019 */,
+			);
+			sourceTree = "<group>";
+		};
+		EDE9560A2330CDE80049C6CA /* L1-2018_2019 */ = {
 			isa = PBXGroup;
 			children = (
 				ED4C58CC21CBE7F600754B5A /* LabExam2.py */,
@@ -36,6 +45,15 @@
 				ED1828B221B9A0CC0097A9E7 /* player.py */,
 				EDC5A2FE21A7363C008B779E /* WebHack.py */,
 			);
+			path = "L1-2018_2019";
+			sourceTree = "<group>";
+		};
+		EDE9560B2330CE130049C6CA /* L1-2019_2020 */ = {
+			isa = PBXGroup;
+			children = (
+				EDE9560C2330CE380049C6CA /* td1.alg */,
+			);
+			path = "L1-2019_2020";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
