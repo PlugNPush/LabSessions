@@ -24,7 +24,7 @@
 from time import sleep
 import math
 import sys
-choice = choice = int(input("Welcome. Chose one option to start.\n1 - Addition of 2 numbers\n2 - Addition of 3 numbers\n3 - Draw an F with # signs\n4 - Draw a C with # signs\n5 - Draw 5 F with # signs\n6 - Write personal informations\n7 - Hello!\n8 - Average calculation\n9 - Elapsed time calculator\n10 - Check if two number are equal\n11 - Even or Odd numbers\n12 - Maximum and minimum\n13 - Sum of x*x.\n14 - Xn and Wn\n15 - Leap Year\n16 - DELTA (Python Edition)\n17 - Calculator\n18 - Rectangle data\n19 - PENDING...\n"))
+choice = int(input("Welcome. Chose one option to start.\n1 - Addition of 2 numbers\n2 - Addition of 3 numbers\n3 - Draw an F with # signs\n4 - Draw a C with # signs\n5 - Draw 5 F with # signs\n6 - Write personal informations\n7 - Hello!\n8 - Average calculation\n9 - Elapsed time calculator\n10 - Check if two number are equal\n11 - Even or Odd numbers\n12 - Maximum and minimum\n13 - Sum of x*x.\n14 - Xn and Wn\n15 - Leap Year\n16 - DELTA (Python Edition)\n17 - Calculator\n18 - Rectangle data\n19 - PENDING...\n"))
 print("\n")
 if choice == 1:
     nb = int(input("Enter the first number : "))
