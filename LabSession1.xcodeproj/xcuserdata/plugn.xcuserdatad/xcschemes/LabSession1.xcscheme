@@ -55,7 +55,7 @@
       </MacroExpansion>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "$(SRCROOT)/L1-2018_2019/LabExam2.py"
+            argument = "$(SRCROOT)/L1-2018_2019/LabSession1.py"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

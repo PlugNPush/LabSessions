@@ -1,7 +1,30 @@
+# TD SESSION 1
+# DEUXIÈME ANNÉE
+# EXERCICES PRESQUE IDENTIQUES, NUMÉROS DIFFÉRENTS
+#
+# PARTIE 1
+# EXO 1 = 3
+# EXO 2 = 4
+# EXO 3 = 7
+# EXO 4 = 1 et 2
+# EXO 5 = 8
+# EXO 6 (NOUVEAU) = 18
+# EXO 7 = 9
+#
+# PARTIE 2
+# EXO 1 = 10
+# EXO 2 = 11
+# EXO 3 = 12
+# EXO 4 = 15
+# EXO 5 = 17
+# EXO 6 (a et b NOUVEAU, c amélioré) = 16
+
+
+
 from time import sleep
 import math
 import sys
-choice = choice = int(input("Welcome. Chose one option to start.\n1 - Addition of 2 numbers\n2 - Addition of 3 numbers\n3 - Draw an F with # signs\n4 - Draw a C with # signs\n5 - Draw 5 F with # signs\n6 - Write personal informations\n7 - Hello!\n8 - Average calculation\n9 - Elapsed time calculator\n10 - Check if two number are equal\n11 - Even or Odd numbers\n12 - Maximum and minimum\n13 - Sum of x*x.\n14 - Xn and Wn\n15 - Leap Year\n16 - DELTA (Python Edition)\n17 - Calculator\n18 - PENDING...\n"))
+choice = choice = int(input("Welcome. Chose one option to start.\n1 - Addition of 2 numbers\n2 - Addition of 3 numbers\n3 - Draw an F with # signs\n4 - Draw a C with # signs\n5 - Draw 5 F with # signs\n6 - Write personal informations\n7 - Hello!\n8 - Average calculation\n9 - Elapsed time calculator\n10 - Check if two number are equal\n11 - Even or Odd numbers\n12 - Maximum and minimum\n13 - Sum of x*x.\n14 - Xn and Wn\n15 - Leap Year\n16 - DELTA (Python Edition)\n17 - Calculator\n18 - Rectangle data\n19 - PENDING...\n"))
 print("\n")
 if choice == 1:
     nb = int(input("Enter the first number : "))
@@ -19,7 +42,7 @@ elif choice == 4:
 elif choice == 5:
     print("", "#" * 5, " " * 3, "#" * 5, " " * 3, "#" * 5, " " * 3, "#" * 5, " " * 3, "#" * 5, "\n", "#" * 1, " " * 7, "#" * 1, " " * 7, "#" * 1, " " * 7, "#" * 1, " " * 7, "#" * 1, "\n", "#" * 1, " " * 7, "#" * 1, " " * 7, "#" * 1, " " * 7, "#" * 1, " " * 7, "#" * 1, "\n", "#" * 4, " " * 4,  "#" * 4, " " * 4,  "#" * 4, " " * 4,  "#" * 4, " " * 4,  "#" * 4, "\n",  "#" * 1, " " * 7, "#" * 1, " " * 7, "#" * 1, " " * 7, "#" * 1, " " * 7, "#" * 1, "\n",  "#" * 1, " " * 7, "#" * 1, " " * 7, "#" * 1, " " * 7, "#" * 1, " " * 7, "#" * 1, "\n",  "#" * 1, " " * 7, "#" * 1, " " * 7, "#" * 1, " " * 7, "#" * 1, " " * 7, "#" * 1, "\n")
 elif choice == 6:
-    print("Name: Michael\nDate of birth: 07/07/2000\nMobile phone number: +33 6 52 72 77 23\n")
+    print("Name: Michael\nDate of birth: 07/07/2000\nMobile phone number: +381 61 615 6844\n")
 elif choice == 7:
     firstname = input("What's your first name? ")
     lastname = input("Okay, what about your last name? ")
@@ -127,11 +150,22 @@ elif choice == 15:
     else:
         print ("The year", year, "is not a leap year.")
 elif choice == 16:
+    chs = input("Choose mode.\na - blocking a = 0\nb - looping a = 0\nc or other - raw mode\n")
     a = int(input("Enter the value of a: "))
+    if a == 0:
+        if chs == "a":
+            sys.exit("This equation is not a 2nd degree equation.\n")
+        elif chs == "b":
+            while a == 0:
+                a = int(input("Enter the value of a != 0: "))
     b = int(input("Enter the value of b: "))
     c = int(input("Enter the value of c: "))
     delta = b*b - 4*a*c
-    if b < 0 and c < 0:
+    if a == 0 and c < 0:
+        print("For " + str(b) + "x " + str(c))
+    elif a == 0 and c >= 0:
+        print("For " + str(b) + "x + " + str(c))
+    elif b < 0 and c < 0:
         print("For " + str(a) + "x² " + str(b) + "x " + str(c) + ", Δ = " + str(delta))
     elif b < 0 and c > 0:
         print("For " + str(a)+ "x² " + str(b) + "x + " + str(c) + ", Δ = " + str(delta))
@@ -139,16 +173,20 @@ elif choice == 16:
         print("For " + str(a) + "x² + " + str(b) + "x " + str(c) + ", Δ = " + str(delta))
     else:
         print("For " + str(a) + "x² + " + str(b) + "x + " + str(c) + ", Δ = " + str(delta))
-    if delta < 0:
+        
+    if a == 0:
+        x0 = (-c)/b
+        print("This degree 1 equation has one solution.\nx = ", x0)
+    elif delta < 0:
         print("No real solution in R.")
     elif delta == 0:
         x0 = -b / 2*a
-        print("There is one solution in R for this equation.\nx0 =", x0)
+        print("There is one solution in R for this equation.\nx0 = ", x0)
     else:
-        print(math.sqrt(delta))
+        # print(math.sqrt(delta))
         x1 = (-b - math.sqrt(delta)) / (2*a)
         x2 = (-b + math.sqrt(delta)) / (2*a)
-        print("There are two solutions in R for this equation.\nx0 =", x1, "\nx1 =", x2)
+        print("There are two solutions in R for this equation.\nx0 = ", x1, "\nx1 = ", x2)
 elif choice == 17:
     op = str(input("Please chose an operation (+, /, * or -): "))
     a = int(input("What's the first number? "))
@@ -160,9 +198,20 @@ elif choice == 17:
     elif op == "*":
         print(str(a) + " * " + str(b) + " = " + str(a*b))
     elif op == "/":
-        print(str(a) + " / " + str(b) + " = " + str(a/b))
+        if b == 0:
+            print("IMPOSSIBLE: Nobody can divide by zero, not even a quantic computer.")
+        else:
+            print(str(a) + " / " + str(b) + " = " + str(a/b))
     else:
         print("The operation symbol has not been recognized.")
+        
+elif choice == 18:
+    length = int(input("Enter the length of the rectangle: "))
+    width = int(input("Enter the width of the rectangle: "))
+    perimeter = 2*length + 2*width
+    surface = length*width
+    print("Your rectangle has a perimeter of " + str(perimeter) + " and a surface of " + str(surface))
+    
 else:
     print("Error on in the selection.")
 
