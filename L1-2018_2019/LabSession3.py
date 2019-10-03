@@ -106,6 +106,60 @@ elif choice == 11:
             i += 1
         c = 0
 #       TBC.
+
+# IMPORTED FROM LABSESSION 2
+# 4 - Array management
+elif choice == 4:
+    n = int(input("How many values in the Array? "))
+    print("Now type all the numbers.")
+    c = 0
+    Array = [0] * n
+    while c < n:
+        Array[c] = int(input("Number " + str(c+1) + ": "))
+        c += 1
+    search = int(input("What term do you want to search for? "))
+    c = 0
+    stop = False
+    found = False
+    while c < n and stop == False:
+        if Array[c] == search:
+            stop = True
+            found = True
+        c += 1
+    if found == True:
+        print("\nFound first ", search, " in Array position ", c-1)
+    else:
+        print("\nCould not find ", search, " in the Array.")
+    c = 0
+    count = 0
+    while c < n:
+        if Array[c] == search:
+            count += 1
+        c += 1
+    print("Found ", search, " in Array ", count, " times.")
+    c = 0
+    stop = False
+    while c < n-1 and stop == False:
+        if Array[c] < Array[c+1]:
+            c += 1
+            ordered = True
+        else:
+            print("This Array is not ordered. Fixing this now.")
+            ordered = False
+            stop = True
+    c = 0
+    d = 0
+    if ordered == False:
+        Array.sort()
+        print(Array)
+        while c < n:
+            print(Array[c])
+            c += 1
+    else:
+        print("This Array is ordered. Great!")
+    
+    
+    
 else:
     print("Error on in the selection.")
 
