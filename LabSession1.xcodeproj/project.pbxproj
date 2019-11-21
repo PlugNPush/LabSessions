@@ -13,6 +13,8 @@
 		ED1828B121B9A0CC0097A9E7 /* main.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
 		ED1828B221B9A0CC0097A9E7 /* player.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = player.py; sourceTree = "<group>"; };
 		ED4C58CC21CBE7F600754B5A /* LabExam2.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = LabExam2.py; sourceTree = "<group>"; };
+		EDA38AC62386E6AD00E21AF3 /* LabSession5def.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = LabSession5def.py; sourceTree = "<group>"; };
+		EDA38AC72386E6BE00E21AF3 /* LabSession5.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = LabSession5.py; sourceTree = "<group>"; };
 		EDC5A2FC21A6FDC7008B779E /* LabSession3.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = LabSession3.py; sourceTree = "<group>"; };
 		EDC5A2FD21A72504008B779E /* LabSession4.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = LabSession4.py; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.python; };
 		EDC5A2FE21A7363C008B779E /* WebHack.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = WebHack.py; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		EDE9560B2330CE130049C6CA /* L1-2019_2020 */ = {
 			isa = PBXGroup;
 			children = (
+				EDA38AC62386E6AD00E21AF3 /* LabSession5def.py */,
+				EDA38AC72386E6BE00E21AF3 /* LabSession5.py */,
 				EDE9560C2330CE380049C6CA /* td1.alg */,
 			);
 			path = "L1-2019_2020";

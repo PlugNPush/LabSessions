@@ -141,30 +141,32 @@ def uplowcase(str):
 # low, up = uplowcase("Добро Дошли на Груп Минаст !")
 # print ("lowercase : ", low, " and UPPERCASE: ", up)
 
-# This part is just for fun, you only can use it if you enter some cyrillic content.
-# It has been entirely developed in cyrillic.
+# This part is just for fun, you can use it if you enter some cyrillic content.
+# It has been firstly entirely developed in cyrillic, and then adapted to support latin as well.
+# The only language that is using both alphabets at the same time at a 50% rate each is Serbian,
+# so it is taken as a reference.
 
-def воел(РЕЋ):
+def самогласника(рећ):
     
-    СПЛИТ = list(РЕЋ)
-    дугаћ = len(СПЛИТ)
-    ТОТАЛ_ВОЕЛ = 0
+    сплит = list(рећ)
+    дугаћ = len(сплит)
+    тотал_самогласника = 0
     ж = 0
     while ж < дугаћ:
-        if (СПЛИТ[ж] == "а") or (СПЛИТ[ж] == "А") or (СПЛИТ[ж] == "е") or (СПЛИТ[ж] == "Е") or (СПЛИТ[ж] == "у") or (СПЛИТ[ж] == "У") or (СПЛИТ[ж] == "и") or (СПЛИТ[ж] == "И") or (СПЛИТ[ж] == "о") or (СПЛИТ[ж] == "О"):
-            ТОТАЛ_ВОЕЛ += 1
+        if (сплит[ж] == "а") or (сплит[ж] == "А") or (сплит[ж] == "е") or (сплит[ж] == "Е") or (сплит[ж] == "у") or (сплит[ж] == "У") or (сплит[ж] == "и") or (сплит[ж] == "И") or (сплит[ж] == "о") or (сплит[ж] == "О") or (сплит[ж] == "a") or (сплит[ж] == "A") or (сплит[ж] == "e") or (сплит[ж] == "E") or (сплит[ж] == "u") or (сплит[ж] == "u") or (сплит[ж] == "i") or (сплит[ж] == "i") or (сплит[ж] == "o") or (сплит[ж] == "O"):
+            тотал_самогласника += 1
         ж += 1
-    print("Има", ТОТАЛ_ВОЕЛ, "воел у то што си дао.")
-    return ТОТАЛ_ВОЕЛ
+    print("Има", тотал_самогласника, "самогласника (vowels) у то што си дао.")
+    return тотал_самогласника
 
-def истивоел(РЕЋ1, РЕЋ2):
-    print("Он зна само српски! This function works only for cyrillic, because WHY NOT? 😂\n\n")
-    if воел(РЕЋ1) == воел(РЕЋ2):
+def истивоел(рећ1, рећ2):
+    print("Ова Функција ради на ћирилицом И латиницом! This function works in cyrillic AND latin!\n\n")
+    if самогласника(рећ1) == самогласника(рећ2):
         return True
     else:
         return False
 
-# print("Са ово што си дао је: ", истивоел("Дали знаш само шта радиш бре! живиш у франсуска!", "Дали знаш само шта радиш бре! живиш у франсуском!"))
+# print("Ово што си дао је; what you gave is: ", истивоел("Дали знаш само шта радиш бре! Живиш у франсуској!", "Dali znaš samo šta radiš bre! Živiš u francuskoj!"))
 
 def palindrome(word):
     newword = word.lower()
@@ -181,6 +183,23 @@ def palindrome(word):
     return True
 
 # print (palindrome("Ahoha"))
+
+def pangramm(sentence):
+    alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    detectedletters = []
+    sentence = sentence.lower()
+    for letter in sentence:
+        if letter in alphabet and (letter not in detectedletters):
+            detectedletters.append(letter)
+    
+    detectedletters = list(set(detectedletters))
+    detectedletters.sort()
+    if detectedletters == alphabet:
+        return True
+    else:
+        return False
+
+# print(pangramm("The quick brown fox jumps over the lazy dog"))
 
 def sortlist(list):
     ARRAY = list.split("-")
@@ -255,6 +274,18 @@ def unique(A, l, t, NEWA, NEWl):
     return NEWA
 
 
-Array = [4,34,7,6,2,65,8,5,6,8,3,6,2,7,2,6]
-length = len(Array)-1
-print(unique(Array, length, 1, [Array[0]], 0))
+# Array = [4,34,7,6,2,65,8,5,6,8,3,6,2,7,2,6]
+# length = len(Array)-1
+# print(unique(Array, length, 1, [Array[0]], 0))
+
+
+def even(l):
+    newlist = []
+    for elem in l:
+        if elem % 2 == 0:
+            newlist.append(elem)
+    
+    return newlist
+
+# Array = [4,34,7,6,2,65,8,5,6,8,3,6,2,7,2,6]
+# print(even(Array))
