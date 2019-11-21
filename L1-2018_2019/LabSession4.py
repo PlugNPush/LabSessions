@@ -76,7 +76,7 @@ def factorial(n):
 
 # print(factorial(5))
 
-def RANGE(x,a,b):
+def range(x,a,b):
     if a > b:
         s = b
         b = a
@@ -86,7 +86,7 @@ def RANGE(x,a,b):
     else:
         return False
 
-# print (RANGE(74,12,650))
+# print (range(74,12,650))
 
 def prime(x):
     i = 2
