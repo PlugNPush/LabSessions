@@ -141,6 +141,7 @@ def uplowcase(str):
 # low, up = uplowcase("Добро Дошли на Груп Минаст !")
 # print ("lowercase : ", low, " and UPPERCASE: ", up)
 
+# Vowel checker
 # This part is just for fun, you can use it if you enter some cyrillic content.
 # It has been firstly entirely developed in cyrillic, and then adapted to support latin as well.
 # The only language that is using both alphabets at the same time at a 50% rate each is Serbian,
@@ -159,14 +160,14 @@ def самогласника(рећ):
     print("Има", тотал_самогласника, "самогласника (vowels) у то што си дао.")
     return тотал_самогласника
 
-def истивоел(рећ1, рећ2):
+def истисамогласника(рећ1, рећ2):
     print("Ова Функција ради на ћирилицом И латиницом! This function works in cyrillic AND latin!\n\n")
     if самогласника(рећ1) == самогласника(рећ2):
         return True
     else:
         return False
 
-# print("Ово што си дао је; what you gave is: ", истивоел("Дали знаш само шта радиш бре! Живиш у франсуској!", "Dali znaš samo šta radiš bre! Živiš u francuskoj!"))
+# print("Ово што си дао је; what you gave is:", истисамогласника("Дали знаш само шта радиш бре! Живиш у франсуској!", "Dali znaš samo šta radiš bre! Živiš u francuskoj!"))
 
 def palindrome(word):
     newword = word.lower()
@@ -289,3 +290,8 @@ def even(l):
 
 # Array = [4,34,7,6,2,65,8,5,6,8,3,6,2,7,2,6]
 # print(even(Array))
+
+
+
+
+print("\n\n\n")
