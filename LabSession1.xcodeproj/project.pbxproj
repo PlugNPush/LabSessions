@@ -12,6 +12,7 @@
 		ED1828B021B9A0CC0097A9E7 /* human.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = human.py; sourceTree = "<group>"; };
 		ED1828B121B9A0CC0097A9E7 /* main.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
 		ED1828B221B9A0CC0097A9E7 /* player.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = player.py; sourceTree = "<group>"; };
+		ED244E15239043B700B11189 /* khole1.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = khole1.py; sourceTree = "<group>"; };
 		ED4C58CC21CBE7F600754B5A /* LabExam2.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = LabExam2.py; sourceTree = "<group>"; };
 		EDA38AC62386E6AD00E21AF3 /* LabSession5def.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = LabSession5def.py; sourceTree = "<group>"; };
 		EDA38AC72386E6BE00E21AF3 /* LabSession5.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = LabSession5.py; sourceTree = "<group>"; };
@@ -53,8 +54,9 @@
 		EDE9560B2330CE130049C6CA /* L1-2019_2020 */ = {
 			isa = PBXGroup;
 			children = (
-				EDA38AC62386E6AD00E21AF3 /* LabSession5def.py */,
+				ED244E15239043B700B11189 /* khole1.py */,
 				EDA38AC72386E6BE00E21AF3 /* LabSession5.py */,
+				EDA38AC62386E6AD00E21AF3 /* LabSession5def.py */,
 				EDE9560C2330CE380049C6CA /* td1.alg */,
 			);
 			path = "L1-2019_2020";
