@@ -47,3 +47,45 @@ Algorithme RechercheMin(tab: tableau 1D d'entiers): entier
         Retourner min
     Fin
 
+
+
+
+DERNIER TD
+EXO1
+
+fonction sommeM(mat1, mat2: matrices): matrice
+variable locale : mat3[100][100]: matrice
+    Début
+        Si taille(mat1) != taille(mat2):
+            retourner (-1) // ou mat1
+        Sinon si mat1 = ø ou mat2 = ø:
+            retourner (-1) // ou mat1
+        Sinon si taille(mat1[0]) != (mat2[0]):
+            retourner (-1) // ou mat1
+        Sinon:
+            Pour i allant de 0 à taille(mat1) faire:
+                pour s allant de 0 à taille(mat1[0]) faire:
+                    mat3[i][s] <- mat2[i][s] + mat1[i][s]
+            retourner mat3
+
+EXO2
+
+fonction prodM(mat1, mat2: matrices): matrice
+variable locale : mat3[100][100]: matrice
+    Début
+        Si taille(mat1) != taille(mat2):
+            retourner (-1) // ou mat1
+        Sinon si mat1 = ø ou mat2 = ø:
+            retourner (-1) // ou mat1
+        Sinon si taille(mat1[0]) != (mat2[0]):
+            retourner (-1) // ou mat1
+        Sinon:
+            Pour i allant de 0 à taille(mat1) faire:
+                pour s allant de 0 à taille(mat1[0]) faire:
+                    mat3[i][s] <- mat2[i][s] * mat1[i][s]
+            retourner mat3
+
+
+EXO 3
+
+fonction RIM()
